@@ -1,0 +1,149 @@
+.container-aboutus-intro {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 110px 30px 20px 30px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr {
+  margin: 2rem 6rem !important;
+  padding-left: 30px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.carousel-hero,
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel-hero .carousel-item {
+  padding: 50px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
+}
+
+.white {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 480px) { /* Mobile (Smartphone) */
+  .container-aboutus-intro {
+    margin: 70px 15px 10px 15px;
+  }
+
+  hr {
+    margin: 1rem 3rem !important;
+    padding-left: 15px;
+  }
+
+  .carousel-hero,
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .carousel-hero .carousel-item {
+    padding: 30px;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) { /* Tablets and iPads */
+  .container-aboutus-intro {
+    margin: 90px 20px 10px 20px;
+  }
+
+  hr {
+    margin: 1.5rem 4rem !important;
+    padding-left: 20px;
+  }
+
+  .carousel-hero,
+  .carousel-inner {
+    height: 350px;
+  }
+
+  .carousel-hero .carousel-item {
+    padding: 40px;
+    height: 350px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1024px) { /* Tablets and iPads (Portrait Mode) */
+  .container-aboutus-intro {
+    margin: 100px 25px 10px 25px;
+  }
+
+  hr {
+    margin: 1.75rem 4.5rem !important;
+    padding-left: 25px;
+  }
+
+  .carousel-hero,
+  .carousel-inner {
+    height: 380px;
+  }
+
+  .carousel-hero .carousel-item {
+    padding: 45px;
+    height: 380px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 1280px) { /* Desktops */
+  .container-aboutus-intro {
+    margin: 110px 30px 20px 30px;
+  }
+
+  hr {
+    margin: 2rem 6rem !important;
+    padding-left: 30px;
+  }
+
+  .carousel-hero,
+  .carousel-inner {
+    height: 400px;
+  }
+
+  .carousel-hero .carousel-item {
+    padding: 50px;
+    height: 400px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1281px) { /* Huge size (Larger screen) */
+  .container-aboutus-intro {
+    margin: 120px 35px 30px 35px;
+  }
+
+  hr {
+    margin: 2.25rem 6.5rem !important;
+    padding-left: 35px;
+  }
+
+  .carousel-hero,
+  .carousel-inner {
+    height: 420px;
+  }
+
+  .carousel-hero .carousel-item {
+    padding: 55px;
+    height: 420px;
+    margin-top: 45px;
+  }
+}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--SELLPAGE CSS-->
+  <link rel="stylesheet" href="/contact us/contactus.css">
+  <!-- Navbar CSS -->
+  <link rel="stylesheet" href="/index/navbar.css">
+  <!-- ===== Fontawesome  FOOTER ICONS===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+ <!--FOOTER CSS -->
+ <link rel="stylesheet" href="/index/footer.css">
+  <!-- Imp Sellpage CSS -->
+  <link rel="stylesheet" href="/sell page/sellpage.css">
+  <!-- Bootstrap CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Script, Jquery CDNs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Sell Page</title>
+
+  </head>
+
+  <body>
+      <!-- ===== NAVBAR ===== -->
+    <nav>
+        <div class="logo" style="margin-top: 10px;">
+         <span onclick="redirectToHomePage()" style="color:white; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">AuctionsTable</span>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links" style="margin-top: 15px;" >
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Auctions</a>
+            <div class="dropdown-content">
+              <a href="/auctions/todaysauction.html">Today's Auctions </a>
+              <a href="/auctions/completeauction.html">Completed Auctions</a>
+              <a href="/auctions/joinauction.html">Join Auctions</a>
+            </div>
+        </li>
+            <li><a href="/sell page/sellpage.html">Sells</a></li>
+            <li><a href="/howitworks/howitworks.html">How it works</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);"  class="dropbtn">Collections</a>
+                <div class="dropdown-content">
+                  <a href="/collections/FineArts/Fine Arts.html">Fine Arts</a>
+                  <a href="/collections/Antiques/Antiques.html">Antiques</a>
+                  <a href="/collections/Vehicles/Vehicles.html">Vehicles</a>
+                  <a href="/collections/Electronics/Electronics.html">Electronics</a>
+                  <a href="/collections/RareBooks/Rare Books.html">Rare Books</a>
+                  <a href="/collections/HomeDecor/Home Decor.html">Home Decor</a>
+                  <a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a>
+                  <a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a>
+                </div>
+            </li>
+            <li><a href="/about us/aboutus.html">About Us</a></li>
+            <li><a href="/contact us/contactus.html">Contact Us</a></li>
+            <li><a href="/index/Register/Regsiter.html"><button class="login-button">Register</button></a></li>
+        </ul>
+    </nav>
+  <!-- ===== NAVBAR END ===== -->
+     
+    <!-- SELL PAGE introduction -->
+    <div class="container-aboutus-intro">
+      <img
+        src="https://www.bpiauctions.com/wp-content/uploads/2023/06/collections-shipping-export-1.jpg"
+        alt="Snow"
+        style="width:100%; height: 60vh;"/>
+      <div class="centered">
+        <h3 style="margin-top: 10px;">An introduction to selling</h3>
+        <h1 style="font-size: 3rem; font-weight: 600;">Start sellling with Auctions Table</h1>
+      </div>
+    </div>
+    <div class="main-container">
+      <p class="notDisplayed" style="font-size: 1.5rem; font-weight: bold; line-height: 30px;">
+        Auctions Table exists to help businesses buy & sell industry items in the
+        smartest way possible. We are known for our expertise across multiple
+        sectors & help businesses, from small independents to multinational
+        corporations, realise the value of assets, create space, & generate
+        revenue.
+      </p>
+    </div>
+
+    <!-- breadcrumbs  -->
+    <ul style="background-color: none !important;" class="breadcrumb">
+      <li><a href="/index/index.html">Auctions Table</a></li>
+      <li><a href="/sell page/sellpage.html">Sell with Auctions Table</a></li>
+    </ul>
+
+    <!-- benefits container -->
+    <div class="benefits-container">
+      <h2 class="heading"
+        style="color: #fff; font-size: 3rem; font-weight: 600; line-height: 40px;">
+        Benefits of selling with Auctions Table
+      </h2>
+
+      <!-- 3 columns container -->
+      <div style="padding: 20px;" class="grid-container">
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/start-to-finish-management.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Start-to-finish management</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/tailored-selling-solutions.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Tailored selling solutions</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/sell-from-your-site.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Sell from your site</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/no-sell-no-fee.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>No sale no fee, no upfront costs</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/turnaround-times.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Unrivalled turnaround times</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/sector-specialists.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Sector specialists</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/bespoke-marketing.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Bespoke marketing strategy</h3>
+          </div>
+        </div>
+
+        <div class="grid-item"></div>
+
+        <div class="grid-item">
+          <div class="image-text">
+            <div class="image-text__image">
+              <img
+                src="https://www.bpiauctions.com/wp-content/uploads/2023/02/timed-auction.svg"
+                height="30"
+                width="30"/>
+            </div>
+            <h3>Industry-leading timed</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="/sell page/sellform.html"><button type="button" class="btn btn-danger btn-lg">Sell with us</button></a> 
+      </div>
+    </div>
+
+    <!-- zigzag conatiner -->
+    <div style="margin-top: 20px;" class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-6" style="text-align: center;">
+          <h3
+            style="color: #4070F4; font-weight: 600; font-size: 2.5rem ; margin-top: 10px;">
+            Why choose Auctions Table as your disposal partner?
+          </h3>
+          <p style="color: black; font-size: 2rem;">
+            At Auctions Table, we recognise that every business has unique requirements
+            when it comes to asset disposal. Whether you need to
+            create space quickly or generate revenue fast, 
+            we can work with you to create a disposal solution to suit your
+            specific needs.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-xs-6">
+          <img
+            class="img-responsive"
+            style="width: 110%; height: 80vh;"
+            src="https://www.bpiauctions.com/wp-content/uploads/2023/06/thinking-about-retiring.jpg"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-1">
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <img
+            class="img-responsive"
+            style="width: 100%; height: 70vh;"
+            src="https://www.bpiauctions.com/wp-content/uploads/2023/06/sell-with-bpi-hassle-free-asset-disposal.jpg"/>
+        </div>
+
+        <div class="col-md-6 col-xs-6" style="text-align: center;">
+          <h3 style="color: #4070F4; font-weight: 600; font-size: 3rem;">
+            Experts in commercial asset disposal.
+          </h3>
+          <p style="color: black; font-size: 2rem;">
+            Our team of experts will work closely with you to understand 
+            specific requirements of your organization & devise a strategy.
+          </p>
+          <p style="color: black; font-size: 2rem;">
+            Whether you prefer to sell from your own site or utilise our
+            Northern warehouse, we have flexibility to accommodate your
+            preferences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- accordion -->
+    <div style="padding: 50px;" class="accordion" id="accordionExample">
+      <div
+        style="background-color: rgba(203,203,203,0.1)"
+        class="accordion-item">
+        <h2>
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne">
+            <h2>Experience and Expertise in Asset Disposal</h2>
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              Our team has over half a century of combined experience and
+              knowledge in the asset disposal industry, making us a trusted
+              partner for businesses seeking an effective solution. We
+              specialise in the disposal stage of the asset lifecycle, offering
+              solutions for every scenario - from the removal of single machines
+              to full site clearances.
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              Our extensive database of thousands of engaged and interested
+              buyers and bespoke marketing strategy allows us to create the best
+              sale experience for our clients, ensuring maximum returns for
+              their assets. You can rely on our expertise to provide advice on
+              reserves, cataloguing, photography, and item descriptions,
+              optimising the visibility and appeal of your items for sale.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #e6e6f2;" class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo">
+            <h2>User-Friendly Auction Platform for Buying and Selling</h2>
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              The AuctionTable industry-leading timed auction platform offers a seamless
+              experience for buyers and sellers alike. Our user-friendly
+              interface allows buyers to easily browse and purchase commercial
+              assets, while sellers benefit from the AuctionTable simple five-step
+              selling process.
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              By leveraging intelligent auction technology, our platform
+              presents your sale to an extensive buyer audience, achieving
+              higher returns for your items.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="background-color: rgba(203,203,203,0.1)"
+        class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree">
+            <h2>Unlocking the Hidden Value in Your Assets</h2>
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              Many businesses are unaware of the value of assets they have and
+              no longer require. Our team can provide valuable insights into the
+              realistic worth of your assets and offer tailored disposal
+              solutions to meet your individual needs.
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              Whether you need to sell, repurpose, recycle, or dispose of your
+              assets, we have the expertise to guide you through the process.
+              Partnering with AuctionTable allows you to uncover the hidden value in your
+              assets and turn them into tangible returns.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #e6e6f2;" class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour">
+            <h2>Accelerating Turnaround Times for Maximum Returns</h2>
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              We understand that dealing with asset disposal is often a low
+              priority for businesses. However, by partnering with AuctionTable, you can
+              accelerate the disposal process and achieve maximum returns for
+              your equipment. Our tailored marketing campaigns and online
+              platform enable us to present your assets to thousands of
+              individuals, attracting the perfect buyers for your sale.
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              Unlike traditional routes that can take months to complete, our
+              streamlined approach significantly reduces the turnaround time. On
+              average, the AuctionTable selling process is completed within 4-5 weeks,
+              meaning you will be paid for your asset disposal in less than 6
+              weeks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="background-color: rgba(203,203,203,0.1)"
+        class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive">
+            <h2>Contributing to Sustainability and the Circular Economy</h2>
+          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              In today’s world, sustainability has become a crucial focus for
+              businesses. AuctionTable can help your organisation contribute to the
+              circular economy by repurposing surplus machinery or equipment.
+              Our focus on sustainability aligns with your business goals and
+              contributes to the circular economy.
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 400;">
+              As large corporations regularly renew and upgrade their fleets,
+              surplus machinery needs to be removed responsibly. By partnering
+              with AuctionTable, you can fulfil your environmental targets and comply
+              with commercial waste regulations, ensuring a sustainable approach
+              to asset disposal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div
+      style="background-color: #4070F4; text-align: center; padding: 70px; margin: 50px; font-size: 2rem; font-weight: 400;">
+      <p style="color: #fff;">
+        Choosing Auctions Table as your partner for asset disposal offers numerous benefits
+        for your business. Our tailored solutions, backed by a wealth of
+        industry experience, ensure that your unique needs are met effectively.
+        With our user-friendly auction platform and bespoke marketing campaigns,
+        we drive maximum returns for your assets.
+      </p>
+      <p style="color: #fff;">
+        By partnering with Auctions Table, you can confidently navigate the asset disposal
+        process while achieving exceptional results. Contact us today to learn
+        more about our hassle-free disposal solutions and unlock the hidden
+        value in your assets.
+      </p>
+    </div>
+
+   <!-- our partner section -->
+ <div style="background-color: #e6e6f2; margin-bottom: 50px; padding: 20px;">
+  <h2
+    style="color: #4070F4; font-weight: 600; font-size: 2rem;"
+    class="text-center font-weight-bold">
+    Our Partners
+  </h2>
+  <br>
+  <section class="customer-logos slider">
+    <div class="slide">
+      <img
+        src="/images/Blue Cream Simple Modern Moon Name Logo.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Blue Modern Simple Design Hotel and Resort Logo - Logos.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Brown and Cream Simple Company Logo.png"
+        alt="logo"/>
+    </div>
+    <div class="slide"><img src="/images/Gold Design.png" alt="logo" /></div>
+    <div class="slide">
+      <img
+        src="/images/Gold Modern Simple Design Hotel and Resort Logo - Logos.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Simple Design Hotel and Resort Logo - Logos.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img src="/images/Yellow Modern Logo - Logos.png" alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Black and White Minimalist Simple Luxury 2 Color Reference Creative Studio Logo.png"
+        alt="logo"/>
+    </div>
+  </section>
+</div>
+
+   <!-- ===== FOOTER ===== -->
+   <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">AuctionsTable</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/contact us/contactus.html">Contact us</a></li>
+          <li><a href="/about us/aboutus.html">About us</a></li>
+          <li><a href="/index/Register/Regsiter.html">Register</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="/collections/FineArts/Fine Arts.html">Fine Arts</a></li>
+          <li><a href="/collections/Antiques/Antiques.html">Antiques</a></li>
+          <li><a href="/collections/Electronics/Electronics.html">Electronics</a></li>
+          <li><a href="/collections/Vehicles/Vehicles.html">Vehicles</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://instagram.com/">Instagram</a></li>
+          <li><a href="https://linkedin.com/">Linkedin</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Categories</li>
+          <li><a href="/collections/RareBooks/Rare Books.html">Rare Books</a></li>
+          <li><a href="/collections/HomeDecor/Home Decor.html">Home Decor</a></li>
+          <li><a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a></li>
+          <li><a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" id="email" placeholder="Enter your email"></li>
+          <li><input type="button" id="subscribe" value="Subscribe" onclick="Subscribe();"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="/index/index.html">AuctionsTable.</a>All rights reserved.</span>
+        <span class="policy_terms">
+          <a href="https://www.privacypolicies.com/blog/auction-websites-privacy-policy//">Privacy policy</a>
+          <a href="https://rjmauctions.com/auctions/online2/terms.htm">Terms & conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+       // NAVBAR Collection + Logo Java 
+ function redirectToHomePage() {
+  window.location.href = "/index/index.html";
+}
+
+
+      $(document).ready(function(){
+          $('.customer-logos').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows: false,
+              dots: false,
+              pauseOnHover:false,
+              responsive: [{
+                  breakpoint: 768,
+                  setting: {
+                      slidesToShow:4
+                  }
+              }, {
+                  breakpoint: 520,
+                  setting: {
+                      slidesToShow: 3
+                  }
+              }]
+          });
+      });
+ // NAVBAR JAVA
+ const hamburger = document.querySelector(".hamburger");
+ const navLinks = document.querySelector(".nav-links");
+ const links = document.querySelectorAll(".nav-links li");
+ 
+ hamburger.addEventListener('click', ()=>{
+    //Animate Links
+     navLinks.classList.toggle("open");
+     links.forEach(link => {
+         link.classList.toggle("fade");
+     });
+ 
+     //Hamburger Animation
+     hamburger.classList.toggle("toggle");
+ });
+
+    // Footer Subscribe Java
+
+function Subscribe(){
+       
+       let def=document.getElementById("email").value;
+      
+       localStorage.setItem("email" , def);
+    
+       window.location.href="/index/index.html";
+
+       alert("Congratulations on joining our auction community! Anticipate thrilling bidding experiences and rare book discoveries.")}
+    </script>
+  </body>
+</html>

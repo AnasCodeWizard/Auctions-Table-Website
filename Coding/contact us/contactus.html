@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CONTACT US CSS-->
+     <link rel="stylesheet" href="/contact us/contactus.css">
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="/index/navbar.css">
+    <!-- ===== Fontawesome  FOOTER ICONS===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   <!--FOOTER CSS -->
+   <link rel="stylesheet" href="/index/footer.css">
+    <!-- Imp Sellpage CSS -->
+    <link rel="stylesheet" href="/sell page/sellpage.css">
+    <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Script, Jquery CDNs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Contact Us</title>
+
+  </head>
+
+  <body>
+  <nav >
+  <div class="logo"  style="margin-top: 10px;">
+    <span onclick="redirectToHomePage()" style="color:white; font-size:26px; margin-top: 20px; font-weight:bold;  letter-spacing: 1px;margin-left: 20px;">AuctionsTable</span>
+  </div>
+  <div class="hamburger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <ul class="nav-links" style="margin-top: 15px;">
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Auctions</a>
+      <div class="dropdown-content">
+        <a href="/auctions/todaysauction.html">Today's Auctions</a>
+        <a href="/auctions/completeauction.html">Completed Auctions</a>
+        <a href="/auctions/joinauction.html">Join Auctions</a>
+      </div>
+    </li>
+    <li><a href="/sell page/sellpage.html">Sells</a></li>
+    <li><a href="/howitworks/howitworks.html">How it works</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn" >Collections</a>
+      <div class="dropdown-content">
+        <a href="/collections/FineArts/Fine Arts.html">Fine Arts</a>
+        <a href="/collections/Antiques/Antiques.html">Antiques</a>
+        <a href="/collections/Vehicles/Vehicles.html">Vehicles</a>
+        <a href="/collections/Electronics/Electronics.html">Electronics</a>
+        <a href="/collections/RareBooks/Rare Books.html">Rare Books</a>
+        <a href="/collections/HomeDecor/Home Decor.html">Home Decor</a>
+        <a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a>
+        <a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a>
+      </div>
+    </li>
+    <li><a href="/about us/aboutus.html">About Us</a></li>
+    <li><a href="/contact us/contactus.html">Contact Us</a></li>
+    <li><a href="/index/Register/Regsiter.html"><button class="login-button">Register</button></a></li>
+  </ul>
+</nav>
+
+
+     
+    <!-- CONTACT US introduction -->
+    <div class="container-aboutus-intro">
+      <img
+        src="https://www.bpiauctions.com/wp-content/uploads/2023/06/contact-bpi-sell-auction-3.jpg"
+        alt="Snow"
+        style="width:100%; height: 60vh;"/>
+      <div class="centered">
+        <h3 style="margin-top: 10px;">Get in Touch</h3>
+        <h1 style="font-size: 3rem; font-weight: 600;">Contact Us</h1>
+      </div>
+    </div>
+
+    <!-- breadcrumbs  -->
+    <ul style="background-color: none !important;" class="breadcrumb">
+      <li><a href="/index/index.html">Auctions Table</a></li>
+      <li><a href="/contact us/contactus.html">Contact Us</a></li>
+    </ul>
+
+    <!-- conatct section -->
+    <div class="row">
+      <div style="margin: 40px;" class="col-md-6">
+        <h2 style="padding: 0px !important; text-align: left; color: #4070f4;">
+          To start selling with Auctions Table, please email or call us on:
+        </h2>
+        <div style="margin-top: 20px;" class="row">
+          <h5>
+            <img
+              src="https://www.bpiauctions.com/wp-content/themes/bpi/img/icon-mail.svg"
+              alt="logo6"
+              style="width: 20px; height: 20px;"/>
+              <b style="margin-left: 10px; color: #4070f4;">sell@auctiontable.com</b>
+          </h5>
+        </div>
+
+        <div style="margin-top: 20px;" class="row">
+          <h5>
+            <img
+              src="https://www.bpiauctions.com/wp-content/themes/bpi/img/icon-tel.svg"
+              alt="logo6"
+              style="width: 20px; height: 20px;"/><b style="margin-left: 10px; color: #4070f4;">03212765220</b>
+          </h5>
+        </div>
+
+        <h2
+          style="padding: 0px !important; text-align: left; margin-top: 20px; color: #4070f4;">
+          If you have a question regarding an <br />
+          auction, please use the contact <br />
+          form.
+        </h2>
+      </div>
+
+      <div style="margin: 40px;" class="col-md-4">
+        <form>
+          <input
+            type="text"
+            id="name"
+            class="form-control form-control-lg no-border"
+            placeholder="Name" required>
+      
+          <input
+            type="text"
+            id="email"
+            style="margin-top: 20px;"
+            class="form-control form-control-lg no-border"
+            placeholder="Email Address" required>
+      
+          <input
+            type="text"
+            id="phone"
+            style="margin-top: 20px;"
+            class="form-control form-control-lg no-border"
+            placeholder="Phone Number" required>
+      
+          <textarea
+            class="form-control form-control-lg no-border"
+            id="message"
+            style="margin-top: 20px;"
+            rows="4"
+            placeholder="Message" required></textarea>
+      
+          <div style="margin-top: 40px;">
+            <button
+              type="submit"
+              class="btn btn-danger btn-lg"
+              style="float:right;">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+
+    <!-- map section -->
+    <div
+      style="background-color: #4070f4; color: #fff; padding: 60px 40px; margin: 30px 0px;"
+      class="row">
+      <div class="col-md-6">
+        <h2
+          style="font-size: 2rem; font-weight: 600; text-align: left; padding: 0px !important; margin-top: 30px;">
+          Visiting Info
+        </h2>
+        <p
+          style="font-size: 1.5rem; font-weight: 400; text-align: left; margin-top: 40px;">
+          Open from 8:30AM – 5:00PM (Monday to Friday), Closed on weekends.
+        </p>
+        <p style="font-size: 1.5rem; font-weight: 400; text-align: left;">
+          Collections from our warehouse facility on site <br>
+          are available from 8:30AM – 4:00PM (Monday to Friday).
+        </p>
+
+        <p style="font-size: 1.5rem; font-weight: 400; text-align: left;">
+          Vendor collections may vary depending on the <br>
+          contract agreement. Please DO NOT pressume <br>
+          their collection times are the same as ours.
+        </p>
+
+        <p style="font-size: 1.5rem; font-weight: 400; text-align: left;">
+          If you are unsure when the collection days and <br>
+          times are please contact us before bidding.
+        </p>
+
+        <div class="row">
+          <div
+            style="background-color: #e6e6f2; padding: 10px 20px; margin: 30px 10px 0px 0px; color: #4070f4; border-radius: 4px; width: 30%;">
+            Vat No: 991821100
+          </div>
+          <div
+            style="background-color: #e6e6f2; padding: 10px 20px; margin: 30px 10px 0px 0px; color: #4070f4; border-radius: 4px; width: 35%;">
+            Company No: 07279488
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div style="margin-bottom: 20px;" class="row">
+          <h3>
+            <img
+              src="https://www.bpiauctions.com/wp-content/themes/bpi/img/icon-marker.svg"
+              height="30"
+              width="30"
+              style="margin-right: 10px;"/>
+            Pechs Block 6 karachi, Pakistan
+          </h3>
+        </div>
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28944.340129980643!2d67.0361849!3d24.9306215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1683270494857!5m2!1sen!2s"
+          width="600"
+          height="550"
+          style="border: 1;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="coords"></div>
+      </div>
+    </div>
+
+ <!-- our partner section -->
+ <div style="background-color: #e6e6f2; margin-bottom: 50px; padding: 20px;">
+  <h2
+    style="color: #4070f4; font-weight: 600; font-size: 2rem;"
+    class="text-center font-weight-bold">
+    Our Partners
+  </h2>
+  <br>
+  <section class="customer-logos slider">
+    <div class="slide">
+      <img
+        src="/images/Blue Cream Simple Modern Moon Name Logo.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Blue Modern Simple Design Hotel and Resort Logo - Logos.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Brown and Cream Simple Company Logo.png"
+        alt="logo"/>
+    </div>
+    <div class="slide"><img src="/images/Gold Design.png" alt="logo" /></div>
+    <div class="slide">
+      <img
+        src="/images/Gold Modern Simple Design Hotel and Resort Logo - Logos.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Simple Design Hotel and Resort Logo - Logos.png"
+        alt="logo"/>
+    </div>
+    <div class="slide">
+      <img src="/images/Yellow Modern Logo - Logos.png" alt="logo"/>
+    </div>
+    <div class="slide">
+      <img
+        src="/images/Black and White Minimalist Simple Luxury 2 Color Reference Creative Studio Logo.png"
+        alt="logo"/>
+    </div>
+  </section>
+</div>
+
+   <!-- ===== FOOTER ===== -->
+   <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">AuctionsTable</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/contact us/contactus.html">Contact us</a></li>
+          <li><a href="/about us/aboutus.html">About us</a></li>
+          <li><a href="/index/Register/Regsiter.html">Register</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="/collections/FineArts/Fine Arts.html">Fine Arts</a></li>
+          <li><a href="/collections/Antiques/Antiques.html">Antiques</a></li>
+          <li><a href="/collections/Electronics/Electronics.html">Electronics</a></li>
+          <li><a href="/collections/Vehicles/Vehicles.html">Vehicles</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://instagram.com/">Instagram</a></li>
+          <li><a href="https://linkedin.com/">Linkedin</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Categories</li>
+          <li><a href="/collections/RareBooks/Rare Books.html">Rare Books</a></li>
+          <li><a href="/collections/HomeDecor/Home Decor.html">Home Decor</a></li>
+          <li><a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a></li>
+          <li><a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" id="email" placeholder="Enter your email"></li>
+          <li><input type="button" id="subscribe" value="Subscribe" onclick="Subscribe();"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="/index/index.html">AuctionsTable.</a>All rights reserved.</span>
+        <span class="policy_terms">
+          <a href="https://www.privacypolicies.com/blog/auction-websites-privacy-policy//">Privacy policy</a>
+          <a href="https://rjmauctions.com/auctions/online2/terms.htm">Terms & conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+
+      $(document).ready(function(){
+          $('.customer-logos').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows: false,
+              dots: false,
+              pauseOnHover:false,
+              responsive: [{
+                  breakpoint: 768,
+                  setting: {
+                      slidesToShow:4
+                  }
+              }, {
+                  breakpoint: 520,
+                  setting: {
+                      slidesToShow: 3
+                  }
+              }]
+          });
+      });
+    
+      let showPosition= function (pos){
+          let lat=pos.coords.latitude;
+          let long=pos.coords.longitude;
+          alert("latitude :" + lat+"\n Longitude: "+ long);
+
+
+          let  abc=document.getElementById("coords");
+          abc.innerHTML=" Latitude : " +lat+"<br>"+" Longitude : " + long
+
+      let userlocation= `https://www.google.com/maps?q=${lat},${long}&output=embed`;
+
+          let map=document.getElementById("map");
+          map.setAttribute("src", userlocation );
+
+      }
+
+          document.getElementById('btn').onclick= function(){
+      if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(showPosition);
+      }
+      else{
+          console.log("Not Supported by Your Browser")
+      }
+          }
+           // NAVBAR Collection + Logo Java 
+ function redirectToHomePage() {
+  window.location.href = "/index/index.html";
+}
+function redirectToCollections() {
+  window.location.href = "/collections/collections.html";
+}
+  // NAVBAR JAVA
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links li");
+  
+  hamburger.addEventListener('click', ()=>{
+     //Animate Links
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+          link.classList.toggle("fade");
+      });
+  
+      //Hamburger Animation
+      hamburger.classList.toggle("toggle");
+  });
+  
+
+    </script>
+  </body>
+</html>

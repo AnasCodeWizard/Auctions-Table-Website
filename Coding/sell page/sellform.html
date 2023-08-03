@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Form</title>
+     <!-- NAVBAR CSS -->
+   <link rel="stylesheet" href="/index/navbar.css">
+   <!-- ===== Fontawesome  FOOTER ICONS===== -->
+   <link rel="stylesheet" href="/index/footer.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   <!-- sell form css -->
+   <link rel="stylesheet" href="sellform.css">
+   <script src="sellform.js"></script>
+</head>
+<body>
+
+   <!-- ===== NAVBAR ===== -->
+   <nav>
+    <div   class="logo"  style="display: flex;align-items: center;" >
+     <span onclick="redirectToHomePage()" style="color:white; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">AuctionsTable </span>
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    
+    <ul class="nav-links">
+      
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn">Auctions</a>
+        <div class="dropdown-content">
+          <a href="/auctions/todaysauction.html">Today's Auctions </a>
+          <a href="/auctions/completeauction.html">Completed Auctions</a>
+          <a href="/auctions/joinauction.html">Join Auctions</a>
+        </div>
+    </li>
+        <li><a href="/sell page/sellpage.html">Sells</a></li>
+        <li><a href="/howitworks/howitworks.html">How it works</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0);"  class="dropbtn" >Collections</a>
+            <div class="dropdown-content">
+              <a href="/collections/FineArts/Fine Arts.html">Fine Arts</a>
+              <a href="/collections/Antiques/Antiques.html">Antiques</a>
+              <a href="/collections/Vehicles/Vehicles.html">Vehicles</a>
+              <a href="/collections/Electronics/Electronics.html">Electronics</a>
+              <a href="/collections/RareBooks/Rare Books.html">Rare Books</a>
+              <a href="/collections/HomeDecor/Home Decor.html">Home Decor</a>
+              <a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a>
+              <a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a>
+            </div>
+        </li>
+        <li><a href="/about us/aboutus.html">About Us</a></li>
+        <li><a href="/contact us/contactus.html">Contact Us</a></li>
+        <li><a href="/index/Register/Regsiter.html"><button class="login-button">Register</button></a></li>
+    </ul>
+</nav>
+<!-- ===== NAVBAR END ===== -->
+  
+
+<!--  Sell form  -->
+<div class="container">
+    <h1>Register for an Account</h1>
+    <p>Are you interested in Buying from or Selling through Auctions Table?</p>
+
+    <div class="forms-list">
+      <div class="form-name" onclick="showForm(1)"><i class="fas fa-user"></i> Private Individual (Buying)</div>
+      <div class="form-name" onclick="showForm(2)"><i class="fas fa-building"></i> Business (Selling)</div>
+      <div class="form-name" onclick="showForm(3)"><i class="fas fa-building"></i> Auction House (Selling)</div>
+    </div>
+    <!-- Form 1 -->
+    <form id="form1" class="sell-form">
+      <h2>Private Individual (Buying)</h2>
+      <div class="input-group">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="tel" placeholder="Mobile Phone" required>
+      <input type="text" placeholder="Address" required>
+      <br><br>
+      <p>I am interested in:</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interests[]" value="Fine Art"> Fine Arts</label>
+        <label><input type="checkbox" name="interests[]" value="Antiques"> Antiques</label>
+        <label><input type="checkbox" name="interests[]" value="Collectibles"> Vehicles</label>
+        <label><input type="checkbox" name="interests[]" value="Watches and Jewelry"> Electronics</label>
+        <label><input type="checkbox" name="interests[]" value="Vehicles"> Rare Books</label>
+        <label><input type="checkbox" name="interests[]" value="Rare Books"> Home Decor</label>
+        <label><input type="checkbox" name="interests[]" value="Wine and Spirits"> Watches & Jewelry</label>
+        <label><input type="checkbox" name="interests[]" value="Fashion and Accessories"> Fashion & Accessories</label>
+      </div>
+      <label class="terms"><input type="checkbox" required> I have read & agree with the Terms & Conditions & Privacy Policy.</label>
+      <button id="submit1" type="submit"  >Submit</button>
+    </form>
+    <!-- Form 2 -->
+    <form id="form2" class="sell-form">
+      <h2>Business (Selling)</h2>
+      <div class="input-group">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="tel" placeholder="Mobile Phone" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="Company Name" required>
+      <br><br>
+      <p>I am interested in:</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interests[]" value="Fine Art"> Fine Arts</label>
+        <label><input type="checkbox" name="interests[]" value="Antiques"> Antiques</label>
+        <label><input type="checkbox" name="interests[]" value="Collectibles"> Vehicles</label>
+        <label><input type="checkbox" name="interests[]" value="Watches and Jewelry"> Electronics</label>
+        <label><input type="checkbox" name="interests[]" value="Vehicles"> Rare Books</label>
+        <label><input type="checkbox" name="interests[]" value="Rare Books"> Home Decor</label>
+        <label><input type="checkbox" name="interests[]" value="Wine and Spirits"> Watches & Jewelry</label>
+        <label><input type="checkbox" name="interests[]" value="Fashion and Accessories"> Fashion & Accessories</label>
+
+      </div>
+      <label class="terms"><input type="checkbox" required> I have read & agree with the Terms & Conditions & Privacy Policy.</label>
+      <button id="submit1" type="submit">Submit</button>
+
+    </form>
+
+    <!-- Form 3 -->
+    <form id="form3" class="sell-form">
+      <h2>Auction House (Selling)</h2>
+      <div class="input-group">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="tel" placeholder="Mobile Phone" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="Company Name" required>
+      <br><br>
+      <p>I am interested in:</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interests[]" value="Fine Art"> Fine Arts</label>
+        <label><input type="checkbox" name="interests[]" value="Antiques"> Antiques</label>
+        <label><input type="checkbox" name="interests[]" value="Collectibles"> Vehicles</label>
+        <label><input type="checkbox" name="interests[]" value="Watches and Jewelry"> Electronics</label>
+        <label><input type="checkbox" name="interests[]" value="Vehicles"> Rare Books</label>
+        <label><input type="checkbox" name="interests[]" value="Rare Books"> Home Decor</label>
+        <label><input type="checkbox" name="interests[]" value="Wine and Spirits"> Watches & Jewelry</label>
+        <label><input type="checkbox" name="interests[]" value="Fashion and Accessories"> Fashion & Accessories</label>
+
+      </div>
+      <label class="terms"><input type="checkbox" required> I have read & agree with the Terms & Conditions & Privacy Policy.</label>
+      <button id="submit1" type="submit" >Submit</button>
+
+    </form>
+  </div>
+
+  <!-- Popup -->
+  <!-- <div class="popup" id="popup">
+    <i class="fas fa-check-circle"></i>
+    <h3>Congratulations!</h3>
+    <p>You have been successfully registered. Start bidding now!</p>
+  </div> -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">AuctionsTable</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/contact us/contactus.html">Contact us</a></li>
+          <li><a href="/about us/aboutus.html">About us</a></li>
+          <li><a href="/index/Register/Regsiter.html">Register</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="/collections/FineArts/Fine Arts.html">Fine Arts</a></li>
+          <li><a href="/collections/Antiques/Antiques.html">Antiques</a></li>
+          <li><a href="/collections/Electronics/Electronics.html">Electronics</a></li>
+          <li><a href="/collections/Vehicles/Vehicles.html">Vehicles</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://instagram.com/">Instagram</a></li>
+          <li><a href="https://linkedin.com/">Linkedin</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Categories</li>
+          <li><a href="/collections/RareBooks/Rare Books.html">Rare Books</a></li>
+          <li><a href="/collections/HomeDecor/Home Decor.html">Home Decor</a></li>
+          <li><a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a></li>
+          <li><a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" id="email" placeholder="Enter your email"></li>
+          <li><input type="button" id="subscribe" value="Subscribe" onclick="Subscribe();"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="/index/index.html">AuctionsTable.</a>All rights reserved.</span>
+        <span class="policy_terms">
+          <a href="https://www.privacypolicies.com/blog/auction-websites-privacy-policy//">Privacy policy</a>
+          <a href="https://rjmauctions.com/auctions/online2/terms.htm">Terms & conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- NAVBAR JAVA -->
+<Script>
+  
+
+  // NAVBAR JAVA
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links li");
+  
+  hamburger.addEventListener('click', ()=>{
+     //Animate Links
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+          link.classList.toggle("fade");
+      });
+  
+      //Hamburger Animation
+      hamburger.classList.toggle("toggle");
+  });
+ // NAVBAR Collection + Logo Java 
+ function redirectToHomePage() {
+  window.location.href = "/index/index.html";
+}
+  </script>
+   <!-- Add the Font Awesome library -->
+   <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</body>
+</html>

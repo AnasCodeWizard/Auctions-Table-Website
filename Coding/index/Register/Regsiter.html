@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Login/Signup Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">  <!-- is link of comment krny sy navbar thk hojayega -->
+ <!-- register css -->
+  <link rel="stylesheet" href="/index/Register/Regsiter.css">
+  <!-- NAVBAR CSS -->
+  <link rel="stylesheet" href="/index/navbar.css">
+  <!-- ===== Fontawesome  FOOTER ICONS===== -->
+  <link rel="stylesheet" href="/index/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+	<video class="video-background" autoplay muted loop>
+		<source src="/index/Register/deal1.mp4" type="video/mp4">
+	  </video>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+	<div class="logo" style="margin-top: 7px;">
+	 <span onclick="redirectToHomePage()" style="color:white; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">AuctionsTable</span>
+	</div>
+	<div class="hamburger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+	<ul class="nav-links" style="margin-top: 15px;" >
+	  <li class="dropdown">
+		<a href="javascript:void(0);" class="dropbtn">Auctions</a>
+		<div class="dropdown-content">
+		  <a href="/auctions/todaysauction.html">Today's Auctions </a>
+		  <a href="/auctions/completeauction.html">Completed Auctions</a>
+		  <a href="/auctions/joinauction.html">Join Auctions</a>
+		</div>
+	</li>
+		<li><a href="/sell page/sellpage.html">Sells</a></li>
+		<li><a href="/howitworks/howitworks.html">How it works</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0);"  class="dropbtn" >Collections</a>
+			<div class="dropdown-content">
+			  <a href="/collections/FineArts/Fine Arts.html">Fine Arts</a>
+			  <a href="/collections/Antiques/Antiques.html">Antiques</a>
+			  <a href="/collections/Vehicles/Vehicles.html">Vehicles</a>
+			  <a href="/collections/Electronics/Electronics.html">Electronics</a>
+			  <a href="/collections/RareBooks/Rare Books.html">Rare Books</a>
+			  <a href="/collections/HomeDecor/Home Decor.html">Home Decor</a>
+			  <a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a>
+			  <a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a>
+			</div>
+		</li>
+		<li><a href="/about us/aboutus.html">About Us</a></li>
+		<li><a href="/contact us/contactus.html">Contact Us</a></li>
+		<li><a href="/index/Register/Regsiter.html"><button class="login-button">Register</button></a></li>
+	</ul>
+</nav>
+<!-- ===== NAVBAR END ===== -->
+
+
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<br>
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<form id="loginForm" onsubmit="login(event)">
+												<div class="form-group">
+													<input type="email" id="loginEmail" class="form-style" placeholder="Email" required>
+													<i class="input-icon uil uil-at"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="password" id="loginPassword" class="form-style" placeholder="Password" required>
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<button type="submit" class="btn mt-4">Login</button>
+											</form>
+											<p class="mb-0 mt-4 text-center"><a href="#" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-3 pb-3">Sign Up</h4>
+											<form id="signupForm" onsubmit="signup(event)">
+												<div class="form-group">
+													<input type="text" id="fullName" class="form-style" placeholder="Full Name" required>
+													<i class="input-icon uil uil-user"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="tel" id="phoneNumber" class="form-style" placeholder="Phone Number" required>
+													<i class="input-icon uil uil-phone"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="email" id="signupEmail" class="form-style" placeholder="Email" required>
+													<i class="input-icon uil uil-at"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="password" id="signupPassword" class="form-style" placeholder="Password" required>
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<button type="submit" class="btn mt-4">Register</button>
+											</form>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">AuctionsTable</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/contact us/contactus.html">Contact us</a></li>
+          <li><a href="/about us/aboutus.html">About us</a></li>
+          <li><a href="/index/Register/Regsiter.html">Register</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="/collections/FineArts/Fine Arts.html">Fine Arts</a></li>
+          <li><a href="/collections/Antiques/Antiques.html">Antiques</a></li>
+          <li><a href="/collections/Electronics/Electronics.html">Electronics</a></li>
+          <li><a href="/collections/Vehicles/Vehicles.html">Vehicles</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://instagram.com/">Instagram</a></li>
+          <li><a href="https://linkedin.com/">Linkedin</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Categories</li>
+          <li><a href="/collections/RareBooks/Rare Books.html">Rare Books</a></li>
+          <li><a href="/collections/HomeDecor/Home Decor.html">Home Decor</a></li>
+          <li><a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a></li>
+          <li><a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" id="email" placeholder="Enter your email"></li>
+          <li><input type="button" id="subscribe" value="Subscribe" onclick="Subscribe();"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="/index/index.html">AuctionsTable.</a>All rights reserved.</span>
+        <span class="policy_terms">
+          <a href="https://www.privacypolicies.com/blog/auction-websites-privacy-policy//">Privacy policy</a>
+          <a href="https://rjmauctions.com/auctions/online2/terms.htm">Terms & conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+ <!-- Footer Subscribe Java -->
+  <script>
+function Subscribe(){
+   let def=document.getElementById("email").value;
+   localStorage.setItem("email" , def);
+   window.location.href="/index/index.html";
+   alert("Congratulations on joining our auction community! Anticipate thrilling bidding experiences and rare book discoveries.")}
+   // NAVBAR Collection + Logo Java 
+ function redirectToHomePage() {
+	window.location.href = "/index/index.html";
+  }
+
+</script>
+
+
+	<!-- REGISTER Login/Signup JAVASCRIPT -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/index/Register/Register.js"></script>
+</body>
+</html>

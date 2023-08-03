@@ -1,0 +1,157 @@
+.container-aboutus-intro {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 110px 30px 20px 30px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background: #eff3f8;
+}
+.container{
+    padding: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.heading{
+    text-align: center;
+    padding: 20px;
+}
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+/* styles */
+
+.main-container {
+    padding : 60px;
+    background-color: #e8e8f2;
+    margin: 40px;
+    border: 1px solid #e8e8f2;
+    color: #4070F4;
+    text-align: center;
+  }
+  p.notDisplayed {
+    margin: 0px !important;
+  }
+
+ /* Style the list */
+ ul.breadcrumb {
+    list-style: none;
+    color: #4070F4;
+    padding: 0 40px;
+    background-color: none !important;
+ }
+
+/* Display list items side by side */
+ ul.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+}
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #4070F4;
+    content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #4070F4;;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+color: red;
+text-decoration: underline;
+}
+
+.benefits-container {
+ background-color: #4070F4;
+ padding: 70px;
+}
+
+.grid-container {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ padding: 10px;
+}
+
+.grid-item {
+padding: 5px;
+font-size: 1rem;
+text-align: center;
+color: #fff;
+}
+
+.image-text {
+display: flex;
+align-items: center;
+}
+.image-text__image {
+flex: 0 0 auto;
+padding: 1em;
+}
+.image-text__image img {
+display: block;
+}
+
+* {
+box-sizing:border-box;
+}
+.container-1 {
+padding: 20px;
+}
+
+.email-container {
+background-color: #e6e6f2;
+color: #4070F4;
+padding: 70px;
+margin-top: 20px;
+}
+
+accordion-button:not(.collapsed) {
+color: #4070F4;
+background-color: #e6e6f2;
+}

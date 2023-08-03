@@ -1,0 +1,168 @@
+
+
+body {
+  background-color: white;
+  color: #4070f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.forms-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-name {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: white;
+  color: #4070f4;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.form-name i {
+  margin-right: 10px;
+}
+
+.form-name:hover {
+  background-color: #4070f4;
+  color: white;
+}
+
+.sell-form {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.sell-form input[type="text"],
+.sell-form input[type="email"],
+.sell-form input[type="password"],
+.sell-form input[type="tel"],
+.sell-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.sell-form textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.checkbox-group label {
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.terms {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4070f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup i {
+  font-size: 40px;
+  color: #4070f4;
+  margin-bottom: 20px;
+}
+
+.popup h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sell-form h2{
+  margin-bottom: 20px;
+}
+
+/* gaping */
+
+.sell-form input[type="text"],
+.sell-form input[type="email"],
+.sell-form input[type="password"],
+.sell-form input[type="tel"],
+.sell-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Add spacing between input fields */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s; /* Add transition effect */
+}
+
+.sell-form input[type="text"]:hover,
+.sell-form input[type="email"]:hover,
+.sell-form input[type="password"]:hover,
+.sell-form input[type="tel"]:hover,
+.sell-form textarea:hover {
+  border-color: #4070f4; /* Change border color on hover */
+}

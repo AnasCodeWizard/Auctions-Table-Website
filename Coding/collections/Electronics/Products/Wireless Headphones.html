@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Books Antique</title>
+    <!-- NAVBAR CSS -->
+<link rel="stylesheet" href="/index/navbar.css"> 
+<!-- product page CSS -->
+<link rel="stylesheet" href="/collections/products.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <!-- FOOTER CSS -->
+      <link rel="stylesheet" href="/index/footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <!-- OTHERS LINKS -->
+      <!-- JAVASCRIPT -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+  <body>
+
+<!-- ===== NAVBAR ===== -->
+   <nav>
+    <div class="logo" style="display: flex;align-items: center;">
+     <span onclick="redirectToHomePage()" style="color:white; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">AuctionsTable</span>
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn">Auctions</a>
+        <div class="dropdown-content">
+          <a href="/auctions/todaysauction.html">Today's Auctions </a>
+          <a href="/auctions/completeauction.html">Completed Auctions</a>
+          <a href="/auctions/joinauction.html">Join Auctions</a>
+        </div>
+    </li>
+        <li><a href="#">Sells</a></li>
+        <li><a href="/howitworks/howitworks.html">How it works</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn" >Collections</a>
+            <div class="dropdown-content">
+              <a href="/collections/FineArts/Fine Arts.html">Fine Arts</a>
+              <a href="/collections/Antiques/Antiques.html">Antiques</a>
+              <a href="/collections/Vehicles/Vehicles.html">Vehicles</a>
+              <a href="/collections/Electronics/Electronics.html">Electronics</a>
+              <a href="/collections/RareBooks/Rare Books.html">Rare Books</a>
+              <a href="/collections/HomeDecor/Home Decor.html">Home Decor</a>
+              <a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a>
+              <a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a>
+            </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/index/Register/Regsiter.html"><button class="login-button">Register</button></a></li>
+    </ul>
+</nav>
+<!-- ===== NAVBAR END ===== -->
+
+
+  <!-- PRODUCT CONTENT -->
+  <div class="product-container">
+    <div class="product-image">
+      <img src="/collections/Electronics/images/Wireless Headphones.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h1>Wireless Headphones</h1>
+      <p class="description">Indulge in premium audio quality with Wireless Headphones. Bid now and enjoy music and movies wire-free with exceptional sound.</p>
+      <p class="price">$30-$100</p>
+      <button id="place-bid-btn">Place a Bid</button>
+    </div>
+  </div>
+
+  <!-- BID SUCCESS POPUP -->
+  <div class="popup" id="bid-success-popup">
+    <div class="popup-content">
+      <i class="fas fa-check-circle"></i>
+      <h2>Congratulations!</h2>
+      <p>Your bid has been placed successfully.</p>
+      <p>We will contact you with further information.</p>
+      <button id="close-success-popup-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- BID FAILURE POPUP -->
+  <div class="popup" id="bid-failure-popup">
+    <div class="popup-content">
+      <i class="fas fa-times-circle"></i>
+      <h2>Oops!</h2>
+      <p>Please place a bid between $30 and $100.</p>
+      <button id="close-failure-popup-btn">Close</button>
+    </div>
+  </div>
+
+
+
+ <!-- ===== FOOTER ===== -->
+ <footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <i class="fab fa-slack"></i>
+        <span class="logo_name">AuctionsTable</span>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">Company</li>
+        <li><a href="/index/index.html">Home</a></li>
+        <li><a href="/Contact us/contactus.html">Contact us</a></li>
+        <li><a href="/about us/aboutus.html">About us</a></li>
+        <li><a href="/index/Register/Regsiter.html">Register</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="/collections/FineArts/Fine Arts.html">Fine Arts</a></li>
+        <li><a href="/collections/Antiques/Antiques.html">Antiques</a></li>
+        <li><a href="/collections/Electronics/Electronics.html">Electronics</a></li>
+        <li><a href="/collections/Vehicles/Vehicles.html">Vehicles</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Account</li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li><a href="https://instagram.com/">Instagram</a></li>
+        <li><a href="https://linkedin.com/">Linkedin</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Categories</li>
+        <li><a href="/collections/HomeDecor/Home Decor.html">Home Decor</a></li>
+        <li><a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a></li>
+        <li><a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a></li>
+        <li><a href="/collections/RareBooks/Rare Books.html">Rare Books</a></li>
+      </ul>
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="text" id="email" placeholder="Enter your email"></li>
+        <li><input type="button" id="subscribe" value="Subscribe" onclick="Subscribe();"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 <a href="/AuctionTable Website/index/index.html">AuctionsTable.</a>All rights reserved.</span>
+      <span class="policy_terms">
+        <a href="https://www.privacypolicies.com/blog/auction-websites-privacy-policy//">Privacy policy</a>
+        <a href="https://rjmauctions.com/auctions/online2/terms.htm">Terms & conditions</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+<!-- Footer Subscribe Java -->
+<script>
+function Subscribe(){
+ let def=document.getElementById("email").value;
+ localStorage.setItem("email" , def);
+ window.location.href="/index/index.html";
+ alert("Congratulations on joining our auction community! Anticipate thrilling bidding experiences and rare book discoveries.")}
+</script>
+ 
+  <!-- // NAVBAR JAVA -->
+<script>
+  const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+ //Animate Links
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+      link.classList.toggle("fade");
+  });
+
+  //Hamburger Animation
+  hamburger.classList.toggle("toggle");
+});
+  </script>
+
+<!-- PRODUCT JS -->
+  <script src="/collections/product.js"></script>
+  </body>
+</html>

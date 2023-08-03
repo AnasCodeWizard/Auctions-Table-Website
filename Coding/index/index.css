@@ -1,0 +1,103 @@
+
+/* Text Animations  main section */
+
+ div.intro{                      /* WHOLE TEXT  */           
+position: relative;
+left: 30px;
+bottom: 35px;
+}
+
+#MainSec img{                             /* image right */
+  height: 500px;
+  float: right;
+  margin-top: -150px;
+  cursor: pointer;
+  
+}
+
+#MainSec .intro h3{                          /* Welcome to the Evolution */
+  text-shadow: 0px 0px 3px lightgray;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+#MainSec .intro h2{                           /* of  */
+  text-shadow: 0px 0px 3px lightgray;
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+}
+#MainSec .intro .of-auctions span{                            /*  Auctions */
+  text-shadow: 0px 0px 3px lightgray;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #4070f4;
+} 
+#MainSec .intro h1{                            /* Unleashes the Power of Bidding */
+  text-shadow: 0px 0px 4px lightgray;
+  font-size: 2rem;
+  font-weight: bold;
+  color:black;
+}
+
+/* WORD BY WORD TEXT ANIMATION  */
+.h-text{
+  margin-left: 30px;
+  line-height: 1.5rem;
+
+}
+.h-animate .text{
+
+    position: relative;
+
+    color: #4070F4;
+
+    font-size: 50px;
+
+    font-weight: 600;
+
+}
+
+.h-animate .text.first-text{
+
+    color: black;
+
+}
+
+.text.sec-text:before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background-color: white;
+
+    border-left: 2px solid #4070F4;
+
+    animation: animate 4s steps(12) infinite;
+
+}
+
+@keyframes animate{
+
+    40%, 60%{
+
+        left: calc(100% + 4px);
+
+    }
+
+    100%{
+
+        left: 0%;
+    }
+}
+
+

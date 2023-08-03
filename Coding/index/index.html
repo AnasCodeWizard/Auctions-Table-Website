@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ===== INDEX CSS ===== -->
+     <link rel="stylesheet" href="/index/index.css">
+     <!-- NAVBAR CSS -->
+     <link rel="stylesheet" href="/index/navbar.css">
+     <!-- Footer CSS -->
+     <link rel="stylesheet" href="/index/footer.css">
+   <!-- ===== Fontawesome  FOOTER ICONS===== -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <!-- CARD SLIDER Swiper CSS -->
+      <link rel="stylesheet" href="/index/Card Slider/css/swiper-bundle.min.css" />
+      <!-- CARD SLIDER CSS -->
+      <link rel="stylesheet" href="/index/Card Slider/css/style.css" />
+      <!-- Reviews Link -->
+      <link rel="stylesheet" href="/index/Reviews Section/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>AuctionTable</title>
+  
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+      <div class="logo" style="display: flex;align-items: center;">
+       <span onclick="redirectToHomePage()" style="color:white; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">AuctionsTable</span>
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="javascript:void(0);" class="dropbtn">Auctions</a>
+          <div class="dropdown-content">
+            <a href="/auctions/todaysauction.html">Today's Auctions </a>
+            <a href="/auctions/completeauction.html">Completed Auctions</a>
+            <a href="/auctions/joinauction.html">Join Auctions</a>
+          </div>
+      </li>
+          <li><a href="/sell page/sellpage.html">Sells</a></li>
+          <li><a href="/howitworks/howitworks.html">How it works</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0);"  class="dropbtn" >Collections</a>
+              <div class="dropdown-content">
+                <a href="/collections/FineArts/Fine Arts.html">Fine Arts</a>
+                <a href="/collections/Antiques/Antiques.html">Antiques</a>
+                <a href="/collections/Vehicles/Vehicles.html">Vehicles</a>
+                <a href="/collections/Electronics/Electronics.html">Electronics</a>
+                <a href="/collections/RareBooks/Rare Books.html">Rare Books</a>
+                <a href="/collections/HomeDecor/Home Decor.html">Home Decor</a>
+                <a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a>
+                <a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a>
+              </div>
+          </li>
+          <li><a href="/about us/aboutus.html">About Us</a></li>
+          <li><a href="/contact us/contactus.html">Contact Us</a></li>
+          <li><a href="/index/Register/Regsiter.html"><button class="login-button">Register</button></a></li>
+      </ul>
+  </nav>
+<!-- ===== NAVBAR END ===== -->
+     
+<!-- ===== Text Animation Sections ===== -->
+        <section id="MainSec" class="flex justify-evenly align-center">
+          <img src="/index/images/main2.png" alt="" srcset="">
+          <div class="intro">
+            <h3>Welcome to the Evolution</h3>
+            <h2 class="of-auctions">of <span>Auctions</span></h2>
+            <h1>Unleash the Power of Bidding!</h1>
+            </section>
+
+            <!-- ANIMATION WORD BY WORD -->
+            <div class="h-text">
+              <div class="h-animate">
+                <span class="text first-text">Acquire&nbsp;</span>
+                <span class="text sec-text">Fine Arts</span>
+              </div>
+            </div>
+
+    <!-- ===== CARD SLIDER ===== -->
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Fine Arts.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+              <a href="/collections/FineArts/Fine Arts.html"> <h3 class="name">Fine Arts</h3></a> 
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Antiques.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+               <a href="/collections/Antiques/Antiques.html"><h3 class="name">Antiques</h3></a> 
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Vehicles.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+               <a href="/collections/Vehicles/Vehicles.html"> <h3 class="name">Vehicles</h3></a>
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Watches & Jewelry.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+               <a href="/collections/WatchesJewelry/WatchesJewelry.html"> <h3 class="name">Watches & Jewelry</h3></a>
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Electronics.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+               <a href="/collections/Electronics/Electronics.html"> <h3 class="name">Electronics</h3></a>
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Fashion & Accessories.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+                <a href="/collections/FashionAccessories/FashionAccessories.html"><h3 class="name">Fashion & Accessories</h3></a>
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Home Decor.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+               <a href="/collections/HomeDecor/Home Decor.html"> <h3 class="name">Home Decor</h3></a>
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="/index/Card Slider/images/showImg/Rare Books.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <img src="/index/Card Slider/images/profile/auction.jpg" alt="" />
+              <div class="name-job">
+               <a href="/collections/RareBooks/Rare Books.html"> <h3 class="name">Rare Books</h3></a>
+                <h4 class="job">Verified By AuctionsTable</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+<!-- REVIEWS SECTION -->
+    <div class="wrapper">
+      <div class="box">
+        <i class="fas fa-quote-left quote"></i>
+        <p>I absolutely love using this auction website! The interface is user-friendly, and the bidding process is smooth. I've scored some incredible deals here and always look forward to the next auction.</p>
+        <div class="content">
+          <div class="info">
+            <div class="name">Alex Smith</div>
+            <div class="job">Discerning Investor</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="/index/Reviews Section/images/profile-1.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-quote-left quote"></i>
+        <p>Highly recommended! This auction site has a wide variety of items up for bid, from collectibles to electronics. The sellers are trustworthy, and the team is responsive and helpful. </p>
+        <div class="content">
+          <div class="info">
+            <div class="name">Steven Chris</div>
+            <div class="job"> Entrepreneur</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="/index/Reviews Section/images/profile-2.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-quote-left  quote"></i>
+        <p>I've been using this auction website for years, and it never disappoints. The site is well-organized, making it easy to find what I'm looking for. The bidding process is exciting, and the sellers are reliable.</p>
+        <div class="content">
+          <div class="info">
+            <div class="name">Kristina Bellis</div>
+            <div class="job">Discerning Investor</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="/index/Reviews Section/images/profile-3.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <i class="fab fa-slack"></i>
+            <span class="logo_name">AuctionsTable</span>
+          </div>
+          <div class="media-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Company</li>
+            <li><a href="/index/index.html">Home</a></li>
+            <li><a href="/Contact us/contactus.html">Contact us</a></li>
+            <li><a href="/about us/aboutus.html">About us</a></li>
+            <li><a href="/index/Register/Regsiter.html">Register</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li><a href="/collections/FineArts/Fine Arts.html">Fine Arts</a></li>
+            <li><a href="/collections/Antiques/Antiques.html">Antiques</a></li>
+            <li><a href="/collections/Vehicles/Vehicles.html">Vehicles</a></li>
+            <li><a href="/collections/Electronics/Electronics.html">Electronics</a></li>
+            
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://instagram.com/">Instagram</a></li>
+            <li><a href="https://linkedin.com/">Linkedin</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Categories</li>
+            <li><a href="/collections/RareBooks/Rare Books.html">Rare Books</a></li>
+            <li><a href="/collections/HomeDecor/Home Decor.html">Home Decor</a></li>
+            <li><a href="/collections/WatchesJewelry/WatchesJewelry.html">Watches & Jewelry</a></li>
+            <li><a href="/collections/FashionAccessories/FashionAccessories.html">Fashion & Accessories</a></li>
+          </ul>
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" id="email" placeholder="Enter your email"></li>
+            <li><input type="button" id="subscribe" value="Subscribe" onclick="Subscribe();"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2023 <a href="/index/index.html">AuctionsTable.</a>All rights reserved.</span>
+          <span class="policy_terms">
+            <a href="https://www.privacypolicies.com/blog/auction-websites-privacy-policy//">Privacy policy</a>
+            <a href="https://rjmauctions.com/auctions/online2/terms.htm">Terms & conditions</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+   <!-- Footer Subscribe Java -->
+    <script>
+function Subscribe(){
+     let def=document.getElementById("email").value;
+     localStorage.setItem("email" , def);
+     window.location.href="/index/index.html";
+     alert("Congratulations on joining our auction community! Anticipate thrilling bidding experiences and rare book discoveries.")}
+    </script>
+
+      <!-- ANIMATION JAVASCRIPT -->
+      <script>
+        const text = document.querySelector(".sec-text");
+      
+        const textLoad = () => {
+      
+          setTimeout(() => {
+      
+            text.textContent = "Fine Arts";
+      
+          }, 0);
+      
+          setTimeout(() => {
+      
+            text.textContent = "Antiques";
+      
+          }, 4000);
+      
+          setTimeout(() => {
+      
+            text.textContent = "Fashion";
+      
+          }, 8000);
+    
+          setTimeout(() => {
+      
+           text.textContent = "Gadgets";
+    
+          }, 12000);
+    
+          setTimeout(() => {
+      
+           text.textContent = "Watches";
+    
+          }, 16000);
+    
+          setTimeout(() => {
+      
+           text.textContent = "Jewelry";
+    
+          }, 20000);
+          
+          setTimeout(() => {
+      
+          text.textContent = "Vehicles";
+    
+          }, 24000);
+          
+          setTimeout(() => {
+      
+          text.textContent = "Add-ons";
+    
+          }, 28000);
+    
+        }
+        textLoad();
+        setInterval(textLoad, 32000);
+        
+       //END ANIMATION
+
+
+  // NAVBAR JAVA
+    const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+
+ // NAVBAR Collection + Logo Java 
+ function redirectToHomePage() {
+  window.location.href = "/index/index.html";
+}
+
+    </script>
+  
+  
+<!-- ===== CARD SLIDR JS ===== -->
+<script src="/index/Card Slider/js/swiper-bundle.min.js"></script>
+<script src="/index/Card Slider/js/script.js"></script>
+
+
+</body>
+</html>
